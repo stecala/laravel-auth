@@ -23,13 +23,3 @@ class PostsTableSeeder extends Seeder
         }
     }
 }
-
-
-/*
-$table->id();
-            $table->string('author')->unique();
-            $table->text('description');
-            $table->text('img_post');
-            $table->dateTime('post_date');
-            $table->timestamps();
-*/
