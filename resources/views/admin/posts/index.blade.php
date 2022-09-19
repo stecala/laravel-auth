@@ -15,7 +15,7 @@
             <tbody>
                 @forelse ($posts as $post)
                 <tr>
-                    <td><a href="{{ route('posts.show', $post->id) }}">{{ $post->id }}</a></td>
+                    <td><a href="{{ route('admin.posts.show', $post->id) }}">{{ $post->id }}</a></td>
                     <td>{{ $post->author }}</td>
                     <td>{{ $post->post_date }}</td>
                     <td><a href="" class="btn btn-warning">Edit</a></td>
@@ -33,8 +33,3 @@
 
 
 @endsection
-
-
-@auth
-    
-@endauth

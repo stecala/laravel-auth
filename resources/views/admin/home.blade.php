@@ -20,7 +20,7 @@
         </div>
     </div>
      <div class="text-center mt-4">
-        <a href="{{ route('posts.index') }}" class="btn btn-success">Vai all'Index</a>
+        <a href="{{ route('admin.posts.index') }}" class="btn btn-success">Vai all'Index</a>
     </div> 
 </div>
 @endsection
