@@ -10995,3 +10995,11 @@ a.text-dark:focus {
   margin-top: 15px;
 }
 
+.delete-div {
+  background-color: rgb(255, 122, 122);
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  text-align: center;
+}
+
