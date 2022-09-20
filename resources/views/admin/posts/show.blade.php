@@ -6,13 +6,19 @@
             <div class="col-12">
                 <h4 class="author">{{ $post->author }}</h4>
             </div>
-            <div class="col-12 post">
+            <div class="col-12 text-center">
+                <img src="{{ $post->img_post }}" alt="img post">
+            </div>
+            <div class="col-12 post mt-2">
                 {{ $post->description }}
             </div>
-            <div class="col-12 date-cont">
+            <div class="col-6 date-cont">
                 <span>
                     {{ $post->post_date }}
                 </span>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+                <a href="" class="btn btn-warning">Edit</a>
             </div>
         </div>
 
