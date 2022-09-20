@@ -40,6 +40,11 @@ class postsController extends Controller
     public function store(Request $request)
     {
         //
+        $data=$request->all();
+        $newPost= new Post();
+        $newPost->create($data);
+
+        return redirect()->route('admin.posts.index', $newPost->id);
     }
 
     /**
