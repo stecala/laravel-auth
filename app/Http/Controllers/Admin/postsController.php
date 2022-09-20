@@ -28,7 +28,8 @@ class postsController extends Controller
     public function create()
     {
         //
-        return view('admin.posts.create');
+        $post= new Post();
+        return view('admin.posts.create', compact('post'));
     }
 
     /**
@@ -69,6 +70,8 @@ class postsController extends Controller
     public function edit($id)
     {
         //
+        $post=Post::findOrFail($id);
+        return view('admin.posts.edit', compact('post'));
     }
 
     /**
@@ -81,6 +84,7 @@ class postsController extends Controller
     public function update(Request $request, $id)
     {
         //
+
     }
 
     /**
