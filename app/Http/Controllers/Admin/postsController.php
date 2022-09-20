@@ -84,7 +84,10 @@ class postsController extends Controller
     public function update(Request $request, $id)
     {
         //
-
+        $data=$request->all();
+        $newPost= Post::findOrFail($id);
+        $newPost->update($data);
+        return redirect()->route('admin.posts.index', $newPost->id);
     }
 
     /**
